@@ -7,10 +7,10 @@ export const cartScreenHeaderStyles = StyleSheet.create({
         justifyContent: 'space-between',
         width: '100%',
     },
-    menuContainer: {
+    emptySpaceContainer: {
         justifyContent: 'center',
     },
-    menu: {
+    emptySpace: {
         width: 30,
         height: 30,
     },

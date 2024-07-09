@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "rn-assignment7-11014111",
+    "slug": "rn-assignment7-11014111",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#808080"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#808080"
+      }
+    },
+    "plugins": [
+      "expo-font"
+    ]
+  }
+}

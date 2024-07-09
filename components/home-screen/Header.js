@@ -23,7 +23,7 @@ export default function Header() {
                 <TouchableOpacity onPress={() => {}}>
                     <Image source = {search} style = {headerStyles.search} />
                 </TouchableOpacity>
-                <TouchableOpacity onPress={() => {}}>
+                <TouchableOpacity onPress={() => {navigation.navigate('Cart')}}>
                 <Image source = {shoppingBag} style = {headerStyles.shoppingBag}/>
                 </TouchableOpacity>
             </View>

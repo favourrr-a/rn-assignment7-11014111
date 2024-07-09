@@ -7,6 +7,7 @@ import {useEffect} from 'react';
 SplashScreen.preventAutoHideAsync();
 
 import { createDrawerNavigator } from '@react-navigation/drawer';
+import { createStackNavigator } from '@react-navigation/stack';
 
 // Screens
 import HomeScreen from '../screens/HomeScreen';
@@ -22,8 +23,20 @@ import ClothingScreen from '../screens/ClothingScreen';
 import { drawerNavStyles } from '../styles/drawer-nav/drawerNavStyles';
 const drawerNavStyle = drawerNavStyles.drawer;
 const Drawer = createDrawerNavigator();
+const Stack = createStackNavigator();
 
-export default function DrawerNav() {
+export default function AppNav() {
+    return (
+        <Stack.Navigator screenOptions = {{
+            headerShown:false
+        }}>
+            <Stack.Screen name = "DrawerNav" component = {DrawerNav} />
+            <Stack.Screen name = "Cart" component = {CartScreen} />
+        </Stack.Navigator>
+    );
+
+}
+function DrawerNav() {
     const [loaded, error] = useFonts({
         'Monterchi-Bold': require('../assets/fonts/monterchi/Fontspring-DEMO-monterchi-bold.otf'),
         'Monterchi-Italic': require('../assets/fonts/monterchi/Fontspring-DEMO-monterchi-italic.otf'),
@@ -49,7 +62,6 @@ export default function DrawerNav() {
             drawerStyle:{drawerNavStyle},
         }}>
             <Drawer.Screen name = "Home" component = {HomeScreen} />
-            <Drawer.Screen name = "Cart" component = {CartScreen} />
             <Drawer.Screen name = "Store" component = {StoreScreen} />
             <Drawer.Screen name = "Locations" component = {LocationsScreen} />
             <Drawer.Screen name = "Blog" component = {BlogScreen} />

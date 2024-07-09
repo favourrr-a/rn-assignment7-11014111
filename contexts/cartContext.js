@@ -14,11 +14,14 @@ const CartContextProvider = ({children}) => {
             if (storedItems) {
                 setCartItems(storedItems);
             }
+        };
+        const loadCartTotal = async () => {
             const storedTotal = await getItem('cart-total');
             if (storedTotal) {
                 setCartTotal(storedTotal);
             }
         };
+        loadCartTotal();
         loadCartItems();
     }, []);
 

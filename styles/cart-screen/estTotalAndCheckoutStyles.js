@@ -7,7 +7,6 @@ export const estTotalAndCheckoutStyles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         width: '100%',
-        marginBottom: -20,
     },
     estTotalContainer: {
         width: '100%',

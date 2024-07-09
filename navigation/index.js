@@ -11,6 +11,12 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 // Screens
 import HomeScreen from '../screens/HomeScreen';
 import CartScreen from '../screens/CartScreen';
+import StoreScreen from '../screens/StoreScreen';
+import LocationsScreen from '../screens/LocationsScreen';
+import BlogScreen from '../screens/BlogScreen';
+import JewelryScreen from '../screens/JewelryScreen';
+import ElectronicsScreen from '../screens/ElectronicsScreen';
+import ClothingScreen from '../screens/ClothingScreen';
 
 // Styles
 import { drawerNavStyles } from '../styles/drawer-nav/drawerNavStyles';
@@ -44,6 +50,12 @@ export default function DrawerNav() {
         }}>
             <Drawer.Screen name = "Home" component = {HomeScreen} />
             <Drawer.Screen name = "Cart" component = {CartScreen} />
+            <Drawer.Screen name = "Store" component = {StoreScreen} />
+            <Drawer.Screen name = "Locations" component = {LocationsScreen} />
+            <Drawer.Screen name = "Blog" component = {BlogScreen} />
+            <Drawer.Screen name = "Jewelry" component = {JewelryScreen} />
+            <Drawer.Screen name = "Electronics" component = {ElectronicsScreen} />
+            <Drawer.Screen name = "Clothing" component = {ClothingScreen} />
         </Drawer.Navigator>
   );
 }

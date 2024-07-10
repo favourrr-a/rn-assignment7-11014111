@@ -27,6 +27,23 @@ const Drawer = createDrawerNavigator();
 const Stack = createStackNavigator();
 
 export default function AppNav() {
+    const [loaded, error] = useFonts({
+        'Monterchi-Bold': require('../assets/fonts/monterchi/Fontspring-DEMO-monterchi-bold.otf'),
+        'Monterchi-Italic': require('../assets/fonts/monterchi/Fontspring-DEMO-monterchi-italic.otf'),
+        'Monterchi-Light': require('../assets/fonts/monterchi/Fontspring-DEMO-monterchi-light.otf'),
+        'Monterchi-Regular': require('../assets/fonts/monterchi/Fontspring-DEMO-monterchi-regular.otf'),
+        'Monterchi-Thin': require('../assets/fonts/monterchi/Fontspring-DEMO-monterchi-thin.otf'),
+    });
+     
+    useEffect(() => {
+    if (loaded || error) {
+        SplashScreen.hideAsync();
+    }
+    }, [loaded, error]);
+    
+    if (!loaded && !error) {
+    return null;
+    }
     return (
         <Stack.Navigator screenOptions = {{
             headerShown:false

@@ -1,5 +1,4 @@
 import { View, Image, TouchableOpacity } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
 
 // Styles
 import { headerStyles } from '../../styles/home-screen/headerStyles';
@@ -10,12 +9,10 @@ import logo from '../../assets/icons/logo-icon.png';
 import search from '../../assets/icons/search-icon.png';
 import shoppingBag from '../../assets/icons/shopping-bag-icon.png';
 
-export default function ProductDetailsScreenHeader() {
-    const navigation = useNavigation();
-
+export default function ProductDetailsScreenHeader({openDrawer}) {
     return(
         <View style = {headerStyles.container}>
-            <TouchableOpacity onPress={() => navigation.toggleDrawer()} style = {headerStyles.menuContainer}>
+            <TouchableOpacity style = {headerStyles.menuContainer} onPress = {openDrawer}>
                 <Image source = {menu} style = {headerStyles.menu}/>
             </TouchableOpacity>
             <Image source = {logo} style = {headerStyles.logo}/>

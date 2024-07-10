@@ -69,13 +69,6 @@ export const productDetailsStyles = StyleSheet.create({
         color: '#dd8560',
         fontFamily: 'Optima',
     },
-    productMaterialsContainer: {
-        marginTop: 20,
-        display: 'flex',
-        flexDirection: 'column',
-        marginBottom: 20,
-        width: '100%',
-    },
     icon: {
         width: 50,
         height: 50,   
@@ -84,6 +77,7 @@ export const productDetailsStyles = StyleSheet.create({
         marginTop: 10,
         borderBottomColor: '#808080',
         paddingBottom: 20,
+        width: '100%',
     },
     textDescriptionContainer: {
         fontSize: 15,

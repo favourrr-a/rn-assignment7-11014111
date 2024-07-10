@@ -80,10 +80,12 @@ npx expo start
 - Follow the steps that show up after entering the above command
 
 ### Screenshots Of The Application
-![A screenshot of the application](app-screenshots/app-screenshot-1.jpg)
-![A screenshot of the application](app-screenshots/app-screenshot-2.jpg)
-![A screenshot of the application](app-screenshots/app-screenshot-3.jpg)
-![A screenshot of the application](app-screenshots/app-screenshot-4.jpg)
-![A screenshot of the application](app-screenshots/app-screenshot-5.jpg)
-![A screenshot of the application](app-screenshots/app-screenshot-6.jpg)
-![A screenshot of the application](app-screenshots/app-screenshot-7.jpg)
+<div style = "text-align: center;">
+    <img src = "app-screenshots/app-screenshot-1.jpg" alt = "A screenshot of the application" width = " 300"/>
+    <img src = "app-screenshots/app-screenshot-2.jpg" alt = "A screenshot of the application" width = " 300"/>
+    <img src = "app-screenshots/app-screenshot-3.jpg" alt = "A screenshot of the application" width = " 300"/>
+    <img src = "app-screenshots/app-screenshot-4.jpg" alt = "A screenshot of the application" width = " 300"/>
+    <img src = "app-screenshots/app-screenshot-5.jpg" alt = "A screenshot of the application" width = " 300"/>
+    <img src = "app-screenshots/app-screenshot-6.jpg" alt = "A screenshot of the application" width = " 300"/>
+    <img src = "app-screenshots/app-screenshot-7.jpg" alt = "A screenshot of the application" width = " 300"/>
+</div>

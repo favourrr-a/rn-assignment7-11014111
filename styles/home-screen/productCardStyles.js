@@ -30,12 +30,12 @@ export const productCardStyles = StyleSheet.create({
     productCategory: {
         fontSize: 20,
         color: '#000000',
-        fontFamily: 'Monterchi-Regular',
+        fontFamily: 'Optima',
     },
     productName: {
         fontSize: 16,
         color: '#555555',
-        fontFamily: 'Monterchi-Regular',
+        fontFamily: 'Optima',
     },
     productPrice: {
         fontSize: 16,

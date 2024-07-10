@@ -1,7 +1,7 @@
 # React Native Shopping Application
 ## Student ID: 11014111
 ### Project Overview
-This is a React Native application created using Expo CLI. It was created for my sixth assignment in Mobile Application Development. 
+This is a React Native application created using Expo CLI. It was created for my seventh assignment in Mobile Application Development. 
 
 ### What is this app?
 The app is an online shopping application that fetches products from an external API
@@ -28,13 +28,14 @@ The app is an online shopping application that fetches products from an external
 - [`styles`](./styles/): Contains styling files for the components and screens. All styles are organized in relevant subfolders.
 - [`App.js`](./App.js): Main entry point of the app. It sets up the drawer component for navigating between screens.
 - [`app.json`](./app.json): Configuration file for the Expo project, defining project settings and metadata
+- [`Assignment-7-UI.pdf](./Assignment-7-UI.pdf): UI design used to build this application
 - [`babel.config.js`](./babel.config.js): Babel configuration file, used to specify how JavaScript code is compiled
 - [`package-lock.json`](./package-lock.json): Automatically generated file that describes the exact tree of dependencies that were installed for the project
 - [`package.json`](./package.json): Contains metadata about the project, including dependencies, scripts, and project info
 - [`README.md`](./README.md): This README file, providing an overview and documentation for the project
 
 ### Design Choices
-The app was created using the design found here.
+The app was created using the design found [`here`](./Assignment-7-UI.pdf).
 
 ### Data Storage Implementation
 In this application, the products being displayed are fetched from an external API. AsyncStorage is used to store and retrieve cart items and the total amount locally on the device. 

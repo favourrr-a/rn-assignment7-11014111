@@ -11,7 +11,7 @@ export default function CartItemsList(){
     const { cartItems } = useCart();
 
     return (
-        <ScrollView showsVerticalScrollIndicator = {true} style = {cartItemsListStyles.container}>
+        <ScrollView showsVerticalScrollIndicator = {false} style = {cartItemsListStyles.container}>
             {cartItems.length === 0 ? 
                 <View style = {cartItemsListStyles.emptyCartTextContainer}>
                     <Text style = {cartItemsListStyles.emptyCartText}> 

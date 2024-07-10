@@ -15,7 +15,7 @@ export default function CartItem({product}) {
             <Image source = {{uri: product.image}} style = {cartItemStyles.image} resizeMode = 'contain'/>
             <View style = {cartItemStyles.productDetailsAndRemoveContainer}>
                 <View style = {cartItemStyles.productDetailsContainer}>
-                    <Text style = {cartItemStyles.productCategory}>{product.category}</Text>
+                    <Text style = {cartItemStyles.productCategory}>{product.category.toUpperCase()}</Text>
                     <Text style = {cartItemStyles.productName}>{product.title}</Text>
                     <Text style = {cartItemStyles.productPrice}>${product.price}</Text>
                 </View>

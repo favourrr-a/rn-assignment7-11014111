@@ -27,22 +27,23 @@ export const cartItemStyles = StyleSheet.create({
         justifyContent: 'center',
     },
     productCategory: {
-        fontSize: 28,
+        fontSize: 20,
         color: '#000000',
-        fontFamily: 'Monterchi-Light',
+        fontFamily: 'Optima',
         letterSpacing: 3,
     },
     productName: {
-        fontSize: 25,
+        fontSize: 18,
         color: '#555555',
-        fontFamily: 'Monterchi-Regular',
-        marginTop: -5,
+        fontFamily: 'Optima',
+        marginTop: 5,
     },
     productPrice: {
         fontSize: 18,
         fontWeight: 'bold',
         color: '#dd8560',
         fontFamily: 'Optima',
+        marginTop: 5,
     },
     removeButtonContainer: {
         alignItems: 'center',

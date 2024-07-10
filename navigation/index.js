@@ -80,6 +80,7 @@ function DrawerNav() {
             drawerContent={(props) => <CustomDrawerContent {...props} />}
             screenOptions={{
                 headerShown: false,
+                drawerType: 'front', 
                 drawerActiveTintColor: '#14142b',
                 drawerActiveBackgroundColor: '#f9f9f9',
                 drawerStyle: drawerNavStyles.drawer,

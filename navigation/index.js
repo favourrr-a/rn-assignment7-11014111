@@ -9,6 +9,9 @@ SplashScreen.preventAutoHideAsync();
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createStackNavigator } from '@react-navigation/stack';
 
+// Custom components
+import CustomDrawerContent from '../components/drawer-nav/CustomDrawerContent';
+
 // Screens
 import HomeScreen from '../screens/HomeScreen';
 import CartScreen from '../screens/CartScreen';
@@ -74,11 +77,17 @@ function DrawerNav() {
     return null;
     }
     return (
-        <Drawer.Navigator screenOptions = {{
-            headerShown:false,
-            drawerActiveTintColor:'#14142b',
-            drawerActiveBackgroundColor:'#f9f9f9',
-            drawerStyle:{drawerNavStyle},
+        <Drawer.Navigator 
+            drawerContent={(props) => <CustomDrawerContent {...props} />}
+            screenOptions={{
+                headerShown: false,
+                drawerActiveTintColor: '#14142b',
+                drawerActiveBackgroundColor: '#f9f9f9',
+                drawerStyle: drawerNavStyles.drawer,
+                drawerLabelStyle: {
+                    fontSize: 20,
+                    color: '#333333'
+                }
         }}>
             <Drawer.Screen name = "Home" component = {HomeScreen} />
             <Drawer.Screen name = "Store" component = {StoreScreen} />

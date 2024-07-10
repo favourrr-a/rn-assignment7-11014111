@@ -18,6 +18,7 @@ import BlogScreen from '../screens/BlogScreen';
 import JewelryScreen from '../screens/JewelryScreen';
 import ElectronicsScreen from '../screens/ElectronicsScreen';
 import ClothingScreen from '../screens/ClothingScreen';
+import ProductDetailsScreen from '../screens/ProductDetailsScreen';
 
 // Styles
 import { drawerNavStyles } from '../styles/drawer-nav/drawerNavStyles';
@@ -32,6 +33,7 @@ export default function AppNav() {
         }}>
             <Stack.Screen name = "DrawerNav" component = {DrawerNav} />
             <Stack.Screen name = "Cart" component = {CartScreen} />
+            <Stack.Screen name = "ProductDetailsScreen" component = {ProductDetailsScreen} />
         </Stack.Navigator>
     );
 

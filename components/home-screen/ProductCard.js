@@ -1,5 +1,6 @@
 import { View, Text, Image, TouchableOpacity } from 'react-native';
 import { useCart } from '../../contexts/cartContext';
+import { useNavigation } from '@react-navigation/native';
 
 // Styles
 import { productCardStyles } from '../../styles/home-screen/productCardStyles';
@@ -9,8 +10,12 @@ import add from '../../assets/icons/add-icon.png';
 
 export default function ProductCard({product}) {
     const { addItemToCart } = useCart();
+    const navigation = useNavigation();
+    const viewProductDetails = () => {
+        navigation.navigate('ProductDetailsScreen', {product: product});
+    }
     return(
-        <View style = {productCardStyles.container}>
+        <TouchableOpacity style = {productCardStyles.container} onPress = {viewProductDetails}>
             <View style = {productCardStyles.imageAndAddButtonContainer}>
                 <Image source = {{uri: product.image}} style = {productCardStyles.image} resizeMode = "contain"/>
                 <TouchableOpacity style = {productCardStyles.addButtonContainer} onPress = {() => addItemToCart(product)}>
@@ -22,6 +27,6 @@ export default function ProductCard({product}) {
                 <Text style = {productCardStyles.productName}>{product.title}</Text>
                 <Text style = {productCardStyles.productPrice}>${product.price}</Text>
             </View>
-        </View>
+        </TouchableOpacity>
     )
 }

@@ -12,14 +12,14 @@ export default function ProductCard({product}) {
     return(
         <View style = {productCardStyles.container}>
             <View style = {productCardStyles.imageAndAddButtonContainer}>
-                <Image source = {product.image} style = {productCardStyles.image}/>
+                <Image source = {{uri: product.image}} style = {productCardStyles.image} resizeMode = "contain"/>
                 <TouchableOpacity style = {productCardStyles.addButtonContainer} onPress = {() => addItemToCart(product)}>
                     <Image source = {add} style = {productCardStyles.addButton}/>
                 </TouchableOpacity>
             </View>
             <View style = {productCardStyles.productDetailsContainer}>
                 <Text style = {productCardStyles.productCategory}>{product.category}</Text>
-                <Text style = {productCardStyles.productName}>{product.name}</Text>
+                <Text style = {productCardStyles.productName}>{product.title}</Text>
                 <Text style = {productCardStyles.productPrice}>${product.price}</Text>
             </View>
         </View>

@@ -1,7 +1,7 @@
 import { View, Text, Image, TouchableOpacity } from 'react-native';
 
 // Styles
-import { catalogueHeaderStyles } from '../../styles/home-screen/catalogueHeaderStyles';
+import { catalogueHeaderStyles } from '../../styles/store-screen/catalogueHeaderStyles';
 
 // Assets
 import listTypeIcon from '../../assets/icons/list-type-icon.png';

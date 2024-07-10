@@ -13,9 +13,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import CustomDrawerContent from '../components/drawer-nav/CustomDrawerContent';
 
 // Screens
-import HomeScreen from '../screens/HomeScreen';
-import CartScreen from '../screens/CartScreen';
 import StoreScreen from '../screens/StoreScreen';
+import CartScreen from '../screens/CartScreen';
 import LocationsScreen from '../screens/LocationsScreen';
 import BlogScreen from '../screens/BlogScreen';
 import JewelryScreen from '../screens/JewelryScreen';
@@ -89,7 +88,6 @@ function DrawerNav() {
                     color: '#333333'
                 }
         }}>
-            <Drawer.Screen name = "Home" component = {HomeScreen} />
             <Drawer.Screen name = "Store" component = {StoreScreen} />
             <Drawer.Screen name = "Locations" component = {LocationsScreen} />
             <Drawer.Screen name = "Blog" component = {BlogScreen} />

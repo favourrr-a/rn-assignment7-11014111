@@ -1,7 +1,7 @@
 import { View, Image, TouchableOpacity } from 'react-native';
 
 // Styles
-import { headerStyles } from '../../styles/home-screen/headerStyles';
+import { headerStyles } from '../../styles/store-screen/headerStyles';
 
 // Assets
 import menu from '../../assets/icons/menu-icon.png';

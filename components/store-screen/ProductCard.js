@@ -3,7 +3,7 @@ import { useCart } from '../../contexts/cartContext';
 import { useNavigation } from '@react-navigation/native';
 
 // Styles
-import { productCardStyles } from '../../styles/home-screen/productCardStyles';
+import { productCardStyles } from '../../styles/store-screen/productCardStyles';
 
 // Assets
 import add from '../../assets/icons/add-icon.png';

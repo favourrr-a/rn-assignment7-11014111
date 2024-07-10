@@ -6,7 +6,7 @@ import axios from 'axios';
 import ProductCard from './ProductCard';
 
 // Styles
-import { productsListStyles } from '../../styles/home-screen/productsListStyles';
+import { productsListStyles } from '../../styles/store-screen/productsListStyles';
 
 export default function ProductsList(){
     const numColumns = 2;

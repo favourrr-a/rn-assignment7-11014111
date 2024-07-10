@@ -2,6 +2,7 @@ import { SafeAreaView, View } from 'react-native';
 
 // Custom components
 import ProductDetailsScreenHeader from '../components/product-details-screen/ProductDetailsScreenHeader';
+import ProductDetails from '../components/product-details-screen/ProductDetails';
 
 // Styles
 import { appStyles } from '../styles/appStyles';
@@ -13,6 +14,7 @@ export default function ProductDetailsScreen({route}) {
         <SafeAreaView style = {appStyles.container}>
             <View style = {productDetailsStyles.container}>
                 <ProductDetailsScreenHeader/>
+                <ProductDetails product = {product}/>
             </View>
         </SafeAreaView>
     );
